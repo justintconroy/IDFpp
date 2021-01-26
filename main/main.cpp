@@ -4,8 +4,6 @@
 #include "esp_system.h"
 #include "esp_spi_flash.h"
 
-#include "IdfTest.h"
-
 #ifdef __cplusplus
 extern "C"
 {
@@ -35,10 +33,6 @@ void app_main(void)
         printf("Restarting in %d seconds...\n", i);
         vTaskDelay(1000 / portTICK_PERIOD_MS);
     }
-
-    IdfTest::MyTestClass t{};
-    auto result = t.TestableMethod(1, 1);
-    printf("IDF Test Result: %d\n", result);
 
     printf("Restarting now.\n");
     fflush(stdout);
