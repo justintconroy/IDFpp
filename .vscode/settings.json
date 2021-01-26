@@ -7,5 +7,9 @@
   "[c]": {
     "editor.quickSuggestions": true
   },
-  "C_Cpp.intelliSenseEngine":"Tag Parser"
+  "C_Cpp.intelliSenseEngine": "Tag Parser",
+  "files.associations": {
+    "unity.h": "c",
+    "functional": "cpp"
+  }
 }
