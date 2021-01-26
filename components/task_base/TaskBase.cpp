@@ -3,14 +3,14 @@
 */
 #include "TaskBase.h"
 
-void TaskBase::start(const char *name,
+void TaskBase::Start(const char *name,
                      const uint32_t stackDepth,
                      UBaseType_t priority)
 {
   this->stopCalled = false;
   xTaskCreate(TaskBase::bootstrap, name, stackDepth, this, priority, &this->handle);
 }
-void TaskBase::stop()
+void TaskBase::Stop()
 {
   this->stopCalled = true;
 }

@@ -13,7 +13,7 @@ public:
   void start(const char *pcName,
              const uint32_t stackDepth,
              UBaseType_t priority);
-  void stop();
+  void Stop();
 
 private:
   virtual void setup() = 0;

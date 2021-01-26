@@ -1,0 +1,3 @@
+[submodule "components/spiffs"]
+	path = components/spiffs
+	url = git@github.com:justintconroy/IDF-SPIFFS-Component.git

@@ -10,6 +10,7 @@
   "C_Cpp.intelliSenseEngine": "Tag Parser",
   "files.associations": {
     "unity.h": "c",
-    "functional": "cpp"
+    "functional": "cpp",
+    "cstdlib": "cpp"
   }
 }
