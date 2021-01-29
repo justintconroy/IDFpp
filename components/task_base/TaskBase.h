@@ -10,22 +10,24 @@
 
 namespace IDF
 {
-  class TaskBase
+class TaskBase {
+public:
+  void Start(const std::string pcName,
+             const uint32_t stackDepth,
+             const UBaseType_t priority);
+  void Stop();
+
+private:
+  virtual void setup() = 0;
+  virtual void loop()
   {
-  public:
-    void Start(const std::string pcName,
-               const uint32_t stackDepth,
-               const UBaseType_t priority);
-    void Stop();
+    Stop();
+  };
+  virtual void cleanup() = 0;
+  static void bootstrap(void *pvParameters);
 
-  private:
-    virtual void setup() = 0;
-    virtual void loop() = 0;
-    virtual void cleanup() = 0;
-    static void bootstrap(void *pvParameters);
-
-    bool stopCalled = false;
-    TaskHandle_t handle = 0;
-  }; // class TaskBase
+  bool stopCalled     = false;
+  TaskHandle_t handle = 0;
+}; // namespace IDF
 } // namespace IDF
 #endif // TASK_BASE_H

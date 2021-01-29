@@ -1,5 +1,5 @@
 {
-  "C_Cpp.clang_format_style": "Visual Studio",
+  "C_Cpp.clang_format_style": "file",
   "editor.formatOnSave": true,
   "[cpp]": {
     "editor.quickSuggestions": true
@@ -12,5 +12,6 @@
     "unity.h": "c",
     "functional": "cpp",
     "cstdlib": "cpp"
-  }
+  },
+  "cmake.configureOnOpen": true
 }
