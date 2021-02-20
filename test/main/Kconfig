@@ -1,0 +1,36 @@
+menu "Kinoo Cube"
+    config MAX_URI_SIZE
+        int "Maximum URI length"
+        default 256
+        help
+            Maximum number of characters allowed in a URI/URL.
+
+    config MAX_FILENAME_SIZE
+        int "Maximum filename length"
+        default 50
+        help
+            Maximum number of characters allowed in a SPIFFS filename.
+
+    config MAX_FILE_SIZE
+        int "Maximum file size"
+        default 1024000
+        help
+            The absolute largest size of file that the device can
+            handle. The default is about 1MB. If you change this
+            value, be sure to update the partitions table so a file
+            of this size will actually fit in storage.
+
+    config DEFAULT_TASK_PRIORITY
+        int "Default task priority"
+        default 5
+        help
+            The default priority given to newly created tasks, unless otherwise
+            specified by the code creating the task.
+
+    config DEFAULT_TASK_STACK_DEPTH
+        int "Default task stack depth"
+        default 8192
+        help
+            The default stack depth for newly created tasks, unless otherwise
+            specified by the code creating the task.
+endmenu
