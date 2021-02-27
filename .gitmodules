@@ -1,3 +1,6 @@
 [submodule "components/spiffs"]
 	path = components/spiffs_pp
 	url = git@github.com:justintconroy/IDF-SPIFFS-Component.git
+[submodule "components/math_pp"]
+	path = components/math_pp
+	url = git://github.com/justintconroy/IDFpp-math
