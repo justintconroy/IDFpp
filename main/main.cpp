@@ -1,11 +1,4 @@
-#include "spiffs.h"
-
-#include <string>
-#include <esp_spi_flash.h>
-#include <esp_system.h>
-#include <freertos/FreeRTOS.h>
-#include <freertos/task.h>
-#include <stdio.h>
+#include "Math.h"
 
 #ifdef __cplusplus
 extern "C" {

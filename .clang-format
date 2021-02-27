@@ -35,8 +35,8 @@ BraceWrapping:
   AfterClass: false
   AfterControlStatement: MultiLine
   AfterEnum: false
-  AfterFunction: true
-  AfterNamespace: true
+  AfterFunction: false
+  AfterNamespace: false
   AfterStruct: false
   AfterUnion: false
   AfterExternBlock: false
@@ -91,7 +91,7 @@ ObjCBlockIndentWidth: 2
 ObjCSpaceAfterProperty: false
 ObjCSpaceBeforeProtocolList: true
 PenaltyBreakAssignment: 10
-PenaltyBreakBeforeFirstCallParameter: 20
+PenaltyBreakBeforeFirstCallParameter: 10
 PenaltyBreakComment: 30
 PenaltyBreakFirstLessLess: 10
 PenaltyBreakString: 1000
